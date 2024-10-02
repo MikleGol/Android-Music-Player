@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreenFragment">
+
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="liber.app.android_music_player.HomeScreenFragment"
+        android:label="Home" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_playerScreenFragment"
+            app:destination="@id/playerScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchScreenFragment"
+        android:name="liber.app.android_music_player.SearchScreenFragment"
+        android:label="Search" />
+    <fragment
+        android:id="@+id/hotButtonScreenFragment"
+        android:name="liber.app.android_music_player.HotButtonScreenFragment"
+        android:label="Hot Button" />
+    <fragment
+        android:id="@+id/playerScreenFragment"
+        android:name="liber.app.android_music_player.PlayerScreenFragment"
+        android:label="Player" />
+</navigation>
